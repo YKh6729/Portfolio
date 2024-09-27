@@ -1,3 +1,3 @@
-import myLogo from "./myLogo.png";
+import myLogo from "./My-logo.png";
 
 export default myLogo;
