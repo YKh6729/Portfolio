@@ -1,0 +1,70 @@
+header {
+  width: 1146px;
+  height: 47px;
+  margin-top: 33px;
+  left: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 150px;
+  margin-right: 144px;
+  margin-bottom: 191px;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin-left: 554px;
+}
+
+.home {
+  margin-right: 44px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.59px;
+  text-align: left;
+}
+
+.home a {
+  color: white;
+}
+
+.about-me {
+  margin-right: 46px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.59px;
+  text-align: left;
+}
+
+.my-works {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.59px;
+  text-align: left;
+  margin-right: 55px;
+}
+
+button {
+  width: 138px;
+  height: 47px;
+  border-radius: 30px 30px 30px 30px;
+  border: 2px 2px 2px 2px;
+  align-items: center;
+}
+
+.button-name {
+  width: 67px;
+  height: 17px;
+  margin-left: 28px;
+  opacity: 0.8px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.59px;
+  color: white;
+}
