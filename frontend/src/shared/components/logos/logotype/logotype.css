@@ -1,0 +1,9 @@
+.logotype {
+  font-size: clamp(18px, 4vw, 72px);
+  color: var(--white);
+  text-shadow: 1px 1px 0 var(--primary-color), -1px -1px 0 var(--primary-color),
+    1px -1px var(--primary-color), -1px 1px var(--primary-color),
+    1px 0 0 var(--primary-color), 0 1px 0 var(--primary-color),
+    -1px 0 0 var(--primary-color), 0 -1px 0 var(--primary-color),
+    0 0 10px var(--primary-color);
+}

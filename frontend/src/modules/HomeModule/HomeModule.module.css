@@ -1,0 +1,154 @@
+.main {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.homeBackground {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 120%;
+
+  background-image: url("./components/homeBackground/homeBackground.png");
+  background-size: 100%;
+  background-position: center;
+
+  z-index: 0;
+  will-change: transform;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .homeBackground {
+    top: -4%;
+    background-size: 400% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+
+main > div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.myLogo {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.aboutMeInformation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px 50px 150px 50px;
+  max-width: 100%;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 76px;
+  max-width: 625px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27.81px;
+  letter-spacing: 0.055em;
+  text-align: left;
+}
+
+.title2 {
+  color: var(--black);
+}
+
+.aboutMeText {
+  color: var(--grey-400);
+}
+
+.myImage {
+  max-width: 100%;
+}
+
+.myImage > img {
+  width: 100%;
+  max-width: 454px;
+  height: auto;
+  border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  .button {
+    margin-top: 15px;
+  }
+
+  .aboutMeInformation {
+    flex-direction: column;
+    padding: 50px 30px 50px 30px;
+  }
+
+  .myImage {
+    order: 1;
+  }
+
+  .information {
+    order: 2;
+  }
+}
+
+.myProjectsHighlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px 50px 50px;
+  gap: 30px;
+}
+
+.title3 {
+  color: var(--black);
+}
+
+.projectsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.project1,
+.project2,
+.project3,
+.project4 {
+  width: 450px;
+  height: 350px;
+}
+
+@media (max-width: 768px) {
+  .myProjectsHighlight {
+    width: 100%;
+    padding: 50px 30px 50px 30px;
+  }
+
+  .projectsList {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+}

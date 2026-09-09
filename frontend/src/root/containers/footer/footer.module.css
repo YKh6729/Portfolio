@@ -1,0 +1,121 @@
+footer {
+  background-color: #131313;
+  width: 100%;
+  padding: 15px;
+}
+
+footer > div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.inTouch {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.helpText {
+  font-family: Syne;
+  font-size: clamp(18px, 2vw, 86px);
+  font-weight: 700;
+  text-align: center;
+  color: #ff9142;
+}
+
+.mail {
+  font-family: Syne;
+  text-align: center;
+  font-size: clamp(18px, 3vw, 96px);
+  white-space: nowrap;
+}
+
+.mail a {
+  color: white;
+}
+
+.info {
+  padding-top: 93px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+
+.logoName {
+  font-size: clamp(24px, 2vw, 72px);
+}
+
+.adress {
+  font-family: Syne;
+  align-items: center;
+  color: #ffffff;
+  font-size: clamp(8px, 2vw, 56px);
+  white-space: nowrap;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactNumber {
+  font-family: Syne;
+  font-size: clamp(12px, 2vw, 86px);
+  white-space: nowrap;
+  color: white;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: space-around;
+  gap: 6px;
+}
+
+.socialIconImg {
+  width: clamp(14px, 4vw, 50px);
+  height: clamp(14px, 4vw, 50px);
+}
+
+.line {
+  margin-top: 74px;
+  border: 1px solid #949494;
+  width: 100%;
+}
+
+.copyright {
+  padding-top: 36px;
+  padding-bottom: 12px;
+  font-family: Syne;
+  font-size: clamp(8px, 2vw, 36px);
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .inTouch {
+    padding-top: 12px;
+  }
+
+  .info {
+    padding-top: 28px;
+    gap: 15px;
+  }
+
+  .contact {
+    gap: 6px;
+  }
+
+  .line {
+    margin-top: 12px;
+  }
+
+  .copyright {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
