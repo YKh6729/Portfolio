@@ -3,10 +3,32 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fr-dev": "yarn --cwd ./frontend dev",
+    "bk-dev": "yarn --cwd ./backend dev",
+    "dev": "concurrently --kill-others \"yarn fr-dev\" \"yarn bk-dev\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "concurrently": "^9.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0"
+  },
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YKh6729/Portfolio.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/YKh6729/Portfolio/issues"
+  },
+  "homepage": "https://github.com/YKh6729/Portfolio#readme"
 }

@@ -1,0 +1,10 @@
+.my-button {
+  width: auto;
+  height: auto;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+}

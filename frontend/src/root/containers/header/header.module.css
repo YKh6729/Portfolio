@@ -1,0 +1,119 @@
+header {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--dark-grey);
+  box-sizing: border-box;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pagesLists {
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(50px, 8vw, 196px);
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: clamp(12px, 5vw, 155px);
+  white-space: nowrap;
+  color: white;
+}
+
+.home,
+.aboutMe,
+.myWorks {
+  font-family: Rubik;
+  font-size: clamp(12px, 2vw, 48px);
+  font-weight: 500;
+}
+
+.contactButton {
+  background-color: var(--dark-grey);
+  box-shadow: 0px 32px 54px 0px #03030323;
+  width: clamp(90px, 12vw, 300px);
+  height: clamp(35px, 4vw, 100px);
+  font-size: clamp(10px, 1.5vw, 38px);
+}
+
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+  }
+
+  header > div {
+    justify-content: space-between;
+  }
+
+  .menuButton {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .pagesLists {
+    display: none;
+  }
+
+  .pagesLists.menuOpen {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: clamp(120px, 40vw, 300px);
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+    gap: clamp(10px, 8vw, 80px);
+
+    background-color: var(--dark-grey);
+    box-sizing: border-box;
+    z-index: 2;
+  }
+
+  .pagesLists.menuOpen .pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(8px, 3vw, 36px);
+  }
+
+  .pagesLists.menuOpen .home,
+  .pagesLists.menuOpen .aboutMe,
+  .pagesLists.menuOpen .myWorks {
+    font-size: clamp(8px, 3vw, 30px);
+    color: white;
+  }
+
+  .pagesLists.menuOpen > div:last-child {
+    width: 80%;
+    padding: clamp(12px, 4vw, 40px);
+    border-top: 1px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactButton {
+    border: none;
+    font-size: clamp(10px, 4vw, 24px);
+    font-weight: 500;
+  }
+}
